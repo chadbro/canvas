@@ -54,4 +54,4 @@ CSV.foreach(csv_file, {headers: true}) do |row|
 end
 	hydra.run
 end
-	puts 'Completed undating grading standards for courses'
+	puts 'Completed updating grading standards for courses'
