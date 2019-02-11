@@ -18,7 +18,7 @@ env != '' ? env << '.' : env
 base_url = "https://#{domain}.#{env}instructure.com/"
 
 CSV.foreach(csv_file, {headers: true}) do |row|
-	if row.headers[0] != 'canvas_course_id' || row.headers[1] != 'gradingstandard_id'
+	if row.headers[0] != 'canvas_course_id' || row.headers[1] != 'grading_standard_id'
 		puts "First column needs to be 'canvas_course_id', and second row needs to be 'grading_standard_id'."
 	else
 	get_course = Typhoeus::Request.new(base_url + "api/v1/accounts/self/courses/#{row['canvas_course_id']}",
