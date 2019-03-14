@@ -11,7 +11,10 @@ Please see the `courses.csv` as a template to structure your CSV file.
 Pro Tip:
 1. Courses must be provisioned before script is ran. The api is a `PUT` request to update the course to be a blueprint course
 2. In the `courses.csv` only the first column **sis_course_id** is required
-3. Ruby Gems required are: csv,typhoeus,byebug
+3. Ruby Gems required are:
+    csv
+    typhoeus
+    byebug
 
 References: 
 API - https://canvas.instructure.com/doc/api/courses.html#method.courses.update
