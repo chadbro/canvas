@@ -5,8 +5,8 @@ require 'json'
 
 ################### Change these values only ##################
 access_token = ''				#Your access token for Canvas
-domain = ''					    #The should be the first part of the url
-env = ''						#Either blank for prod, or type test or beta
+domain = ''				 #The should be the first part of the url
+env = ''		        #Either blank for prod, or type test or beta
 csv_file = ''					#The full path to the location of the mapping file /full/path/to/the/file.csv
 ################### Do not change these #######################
 
