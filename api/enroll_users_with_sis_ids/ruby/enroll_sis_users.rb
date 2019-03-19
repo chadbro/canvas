@@ -16,9 +16,9 @@
  require 'json'
  #------------------Replace these values-----------------------------#
  
- access_token = ''				#Enter the access token Canvas provides in your user settings
- url = ''  							#Enter the full URL to the domain you want to merge files. This is the full Canvas URL exculding the https:// such as canvas.instructure.com
- csv_file = '' 					#Enter the full path to the file. /Users/XXXXXX/Path/To/File.csv
+ access_token = ''		#Enter the access token Canvas provides in your user settings
+ url = ''  		        #Enter the full URL to the domain you want to merge files. This is the full Canvas URL exculding the https:// such as canvas.instructure.com
+ csv_file = '' 	    	#Enter the full path to the file. /Users/XXXXXX/Path/To/File.csv
  limit_sections = 'true'      # Set to 0 or false if users should not be limited to other sections
  
  #-------------------Do not edit below this line---------------------#
