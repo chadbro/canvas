@@ -1,6 +1,6 @@
 =begin
     TrustyTrust
-    Version 2018.05.03.1
+    Working 09/13/2019
 
     This tool allows the creation of bulk 2 way trusts. It will go through a CSV in a given format
     and create a bi-directional trust between all instances in the list.
