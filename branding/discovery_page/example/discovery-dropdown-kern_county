@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 
+    Only Make changes in the section below here unless you know better! 
+    
+    Change URLs appropriately for your specific instance, i.e. 
+    https://DOMAIN.instructure.com/login/canvas
+    https://DOMAIN.instructure.com/login/saml
+    https://DOMAIN.instructure.com/login/ldap
+    https://DOMAIN.instructure.com/login/google
+    https://DOMAIN.instructure.com/login/microsoft
+    Change the "DOMAIN" below to your specific instance along with the correct
+    unique auth location desired from above.
+ -->
+
+<script>
+    // Student / Teacher Url
+    var Rio_Bravo-GreeleyUSDUrl = "https://kern.instructure.com/login/canvas"
+
+    // Parent Url
+    var parentUrl = "https://kern.instructure.com/login/canvas"
+
+    // Change this to your icon if you want your logo on the discovery page
+    var imgPlaceholder = "replaceMeWithUrl"
+</script>
+
+<!-- End changes area -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discovery Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    .container {
+        margin: auto;
+        width: 25%;
+        margin-top: 60px;
+    }
+
+    #submit {
+        cursor: pointer;
+        background-color: #394b58;
+        border: 1px solid white;
+        color: white;
+        border-radius: 5px;
+    }
+
+    #submit:hover {
+        background: #394b58;
+        opacity: 0.6;
+    }
+
+    #submit,
+    #auth-types,
+    #auth-label {
+        width: 100%;
+        height: 30px;
+        font-size: large;
+        margin-top: 15px;
+    }
+
+    #auth-types {
+        background-color: white;
+    }
+
+    body {
+        background-color: #394b58;
+        color: white;
+        font-family: 'Lato', sans-serif;
+    }
+
+    #imagePlaceholder {
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    #img {
+        margin-bottom: 30px;
+    }
+
+    @media screen and (max-width: 900px) {
+
+        .container {
+            width: 60%;
+        }
+    }
+    @media screen and (max-width: 550px) {
+
+        .container {
+            width: 90%;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <img id='img' alt="Canvas by Instructure"
+            src="https://du11hjcvx0uqb.cloudfront.net/br/dist/images/login/canvas-logo-5617606953.svg">
+        <div>
+            <form name="redirect">
+                <label id="auth-label" for="auth-types">Choose your role</label>
+                <br>
+                <select id="auth-types" name="selection">
+                    <option value="">Select...</option>
+                    <option value="Rio_Bravo-GreeleyUSDUrl">Rio Bravo-Greeley Union School District</option>
+                    <option value="studentTeacherUrl">Student or Teacher</option>
+                    <option value="parentUrl">Parent</option>
+                </select>
+                <br>
+                <input type="button" value="Login" onclick="winOpen()" id="submit" />
+            </form>
+
+            <div id="imagePlaceholder">
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<script>
+    function winOpen() {
+        var url = document.redirect.selection.value
+        switch (url) {
+            case "Rio_Bravo-GreeleyUSDUrl":
+                document.location.href = Rio_Bravo-GreeleyUSDUrl;
+                break;
+            case "parentUrl":
+                document.location.href = parentUrl;
+                break;
+
+            default:
+                break;
+        }
+    }
+
+    if (imgPlaceholder !== "replaceMeWithUrl") {
+        var image = document.createElement("img");
+        image.src = imgPlaceholder
+        image.alt = "School Logo"
+        document.getElementById("imagePlaceholder").appendChild(image)
+    }
+</script>
+
+</html>
