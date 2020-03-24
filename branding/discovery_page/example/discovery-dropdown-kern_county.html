@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+   
 <!-- 
     Only Make changes in the section below here unless you know better! 
     
@@ -17,6 +17,7 @@
 <script>
     // Student / Teacher Url
     var Rio_Bravo-GreeleyUSDUrl = "https://kern.instructure.com/login/canvas"
+    var GreenfieldUSDUrl = "https://kern.instructure.com/login/canvas"
 
     // Parent Url
     var parentUrl = "https://kern.instructure.com/login/canvas"
@@ -35,6 +36,11 @@
 </head>
 
 <style>
+
+    .style {
+    background-color: white;
+    }
+
     .container {
         margin: auto;
         width: 25%;
@@ -68,7 +74,7 @@
     }
 
     body {
-        background-color: #394b58;
+        background-color: white;
         color: white;
         font-family: 'Lato', sans-serif;
     }
@@ -106,6 +112,7 @@
                 <br>
                 <select id="auth-types" name="selection">
                     <option value="">Select...</option>
+                    <option value="GreenfieldUSDUrl">Greenfield Union School District</option>
                     <option value="Rio_Bravo-GreeleyUSDUrl">Rio Bravo-Greeley Union School District</option>
                     <option value="studentTeacherUrl">Student or Teacher</option>
                     <option value="parentUrl">Parent</option>
