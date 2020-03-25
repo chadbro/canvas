@@ -114,7 +114,7 @@
                     <option value="parentUrl">Parent</option>
                 </select>
                 <br>
-                <input type="button" value="Login" onclick="winOpen()" id="submit" />
+                <input type="button" value="Login" button onclick="winOpen()" id="submit" />
             </form>
 
             <div id="imagePlaceholder">
@@ -129,6 +129,9 @@
     function winOpen() {
         var url = document.redirect.selection.value
         switch (url) {
+            case "GreenfieldUSDUrl":
+                document.location.href = GreenfieldUSDUrl;
+                break;
             case "Rio_Bravo-GreeleyUSDUrl":
                 document.location.href = Rio_Bravo-GreeleyUSDUrl;
                 break;
