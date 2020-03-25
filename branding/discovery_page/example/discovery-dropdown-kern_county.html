@@ -16,7 +16,7 @@
 
 <script>
     // Student / Teacher Url
-    var Rio_Bravo-GreeleyUSDUrl = "https://kern.instructure.com/login/canvas"
+    var Rio_BravoGreeleyUSDUrl = "https://kern.instructure.com/login/canvas"
     var GreenfieldUSDUrl = "https://kern.instructure.com/login/canvas"
 
     // Parent Url
@@ -36,7 +36,6 @@
 </head>
 
 <style>
-
     .container {
         margin: auto;
         width: 25%;
@@ -109,12 +108,12 @@
                 <select id="auth-types" name="selection">
                     <option value="">Select...</option>
                     <option value="GreenfieldUSDUrl">Greenfield Union School District</option>
-                    <option value="Rio_Bravo-GreeleyUSDUrl">Rio Bravo-Greeley Union School District</option>
+                    <option value="Rio_BravoGreeleyUSDUrl">Rio Bravo-Greeley Union School District</option>
                     <option value="studentTeacherUrl">Student or Teacher</option>
                     <option value="parentUrl">Parent</option>
                 </select>
                 <br>
-                <button onclick="winOpen()" value="Login" id="submit" />
+                <input type="button" value="Login" onclick="winOpen()" id="submit" />
             </form>
 
             <div id="imagePlaceholder">
@@ -132,8 +131,8 @@
             case "GreenfieldUSDUrl":
                 document.location.href = GreenfieldUSDUrl;
                 break;
-            case "Rio_Bravo-GreeleyUSDUrl":
-                document.location.href = Rio_Bravo-GreeleyUSDUrl;
+            case "Rio_BravoGreeleyUSDUrl":
+                document.location.href = Rio_BravoGreeleyUSDUrl;
                 break;
             case "parentUrl":
                 document.location.href = parentUrl;
