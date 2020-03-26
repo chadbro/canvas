@@ -15,12 +15,59 @@
  -->
 
 <script>
-    // Student / Teacher Url
-    var Rio_BravoGreeleyUSDUrl = "https://kern.instructure.com/login/canvas"
+    // Student / Teacher Url per District
+    
+    var ArvinUSDUrl = "https://kern.instructure.com/login/canvas"  
+    var BakersfieldCSDUrl = "https://kern.instructure.com/login/canvas"
+    var BeardsleySDUrl = "https://kern.instructure.com/login/canvas"
+    var BelridgeSDUrl = "https://kern.instructure.com/login/canvas"
+    var ButtonwillowSDUrl = "https://kern.instructure.com/login/canvas"
+    var CalienteUSDUrl = "https://kern.instructure.com/login/canvas"
+    var DelanoJointUnionHSDUrl = "https://kern.instructure.com/login/canvas"
+    var DelanoUSDUrl = "https://kern.instructure.com/login/canvas"
+    var DiGiorgiaSDUrl = "https://kern.instructure.com/login/canvas"
+    var EdisonESDUrl = "https://kern.instructure.com/login/canvas"
+    var ElTejonUSDUrl = "https://kern.instructure.com/login/canvas"
+    var ElkHillsESDUrl = "https://kern.instructure.com/login/canvas"
+    var FairfaxSDUrl = "https://kern.instructure.com/login/canvas"
+    var FruitvaleSDUrl = "https://kern.instructure.com/login/canvas"
+    var GeneralShafterUrl = "https://kern.instructure.com/login/canvas"
     var GreenfieldUSDUrl = "https://kern.instructure.com/login/canvas"
+    var GrimmwaySchoolsUrl = "https://kern.instructure.com/login/canvas"
+    var KCSOSAltEdUrl = "https://kern.instructure.com/login/canvas"
+    var KernvilleUSDUrl = "https://kern.instructure.com/login/canvas"
+    var LakesideUnionUSDUrl = "https://kern.instructure.com/login/canvas"
+    var LamontSDUrl = "https://kern.instructure.com/login/canvas"
+    var LinnsValleyPosoFlatUSDUrl = "https://kern.instructure.com/login/canvas"
+    var LostHillsUSDUrl = "https://kern.instructure.com/login/canvas"
+    var MapleElementarySDUrl = "https://kern.instructure.com/login/canvas"
+    var MaricopaUSDUrl = "https://kern.instructure.com/login/canvas"
+    var McFarlandUSDUrl = "https://kern.instructure.com/login/canvas"
+    var McKittrickSDUrl = "https://kern.instructure.com/login/canvas"
+    var MidwaySDUrl = "https://kern.instructure.com/login/canvas"
+    var MojaveUSDUrl = "https://kern.instructure.com/login/canvas"
+    var MurocJointUSDUrl = "https://kern.instructure.com/login/canvas"
+    var NorrisSDUrl = "https://kern.instructure.com/login/canvas"
+    var PanamaBuenaVistaUSDUrl = "https://kern.instructure.com/login/canvas"
+    var PondElementarySDUrl = "https://kern.instructure.com/login/canvas"
+    var RichlandSDUrl = "https://kern.instructure.com/login/canvas"
+    var RioBravoGreeleyUSDUrl = "https://kern.instructure.com/login/canvas"
+    var RosedaleUSDUrl = "https://kern.instructure.com/login/canvas"
+    var SemitropicSDUrl = "https://kern.instructure.com/login/canvas"
+    var SierraSandsUSDUrl = "https://kern.instructure.com/login/canvas"
+    var SouthForkUSDUrl = "https://kern.instructure.com/login/canvas"
+    var SouthernKernUSDUrl = "https://kern.instructure.com/login/canvas"
+    var StandardSchoolDUrl = "https://kern.instructure.com/login/canvas"
+    var TaftCityUrl = "https://kern.instructure.com/login/canvas"
+    var TaftUnionHighSDUrl = "https://kern.instructure.com/login/canvas"
+    var TehachapiUSDUrl = "https://kern.instructure.com/login/canvas"
+    var VinelandSDUrl = "https://kern.instructure.com/login/canvas"
+    var WascoHighSDUrl = "https://kern.instructure.com/login/canvas"
+    var WascoUnionElementarySDUrl = "https://kern.instructure.com/login/canvas"
+    var WonderfulCollegePrepUrl = "https://kern.instructure.com/login/canvas"
 
     // Parent Url
-    var parentUrl = "https://kern.instructure.com/login/canvas"
+   // var parentUrl = "https://kern.instructure.com/login/canvas"
 
     // Change this to your icon if you want your logo on the discovery page
     var imgPlaceholder = "replaceMeWithUrl"
@@ -103,14 +150,61 @@
             src="https://kern.org/wp-content/themes/KCSOS-2018/assets/images/kcsos-logo.svg">
         <div>
             <form name="redirect">
-                <label id="auth-label" for="auth-types">Choose your role</label>
+                <label id="auth-label" for="auth-types">Choose your School District</label>
                 <br>
                 <select id="auth-types" name="selection">
                     <option value="">Select...</option>
+                    <option value="ArvinUSDUrl">Arvin Union School District</option>
+                    <option value="BakersfieldCSDUrl">Bakersfield City School District</option>
+                    <option value="BeardsleySDUrl">Beardsley School District</option>
+                    <option value="BelridgeSDUrl">Belridge School District</option>
+                    <option value="ButtonwillowSDUrl">Buttonwillow School District</option>
+                    <option value="CalienteUSDUrl">Caliente Union School District</option>
+                    <option value="DelanoJointUnionHSDUrl">Delano Joint Union High School District</option>
+                    <option value="DelanoUSDUrl">Delano Union School District</option>
+                    <option value="DiGiorgiaSDUrl">DiGiorgio School District</option>
+                    <option value="EdisonESDUrl">Edison Elementary School District</option>
+                    <option value="ElTejonUSDUrl">El Tejon Unified School District</option>
+                    <option value="ElkHillsESDUrl">Elk Hills Elementary School</option>
+                    <option value="FairfaxSDUrl">Fairfax School District</option>
+                    <option value="FruitvaleSDUrl">Fruitvale School District</option>
+                    <option value="GeneralShafterUrl">General Shafter</option>
                     <option value="GreenfieldUSDUrl">Greenfield Union School District</option>
-                    <option value="Rio_BravoGreeleyUSDUrl">Rio Bravo-Greeley Union School District</option>
-                    <option value="studentTeacherUrl">Student or Teacher</option>
-                    <option value="parentUrl">Parent</option>
+                    <option value="GrimmwaySchoolsUrl">Grimmway Schools</option>
+                    <option value="KCSOSAltEdUrl">KCSOS Alt. Ed.</option>
+                    <option value="KernvilleUSDUrl">Kernville Union School District</option>
+                    <option value="LakesideUnionUSDUrl">Lakeside Union School District</option>
+                    <option value="LamontSDUrl">Lamont School District</option>
+                    <option value="LinnsValleyPosoFlatUSDUrl">Linns Valley-Poso Flat Union School District</option>
+                    <option value="LostHillsUSDUrl">Lost Hills Union School District</option>
+                    <option value="MapleElementarySDUrl">Maple Elementary School District</option>
+                    <option value="MaricopaUSDUrl">Maricopa Unified School District</option>
+                    <option value="McFarlandUSDUrl">McFarland Unified School District</option>
+                    <option value="McKittrickSDUrl">McKittrick School District</option>
+                    <option value="MidwaySDUrl">Midway School District</option>
+                    <option value="MojaveUSDUrl">Mojave Unified School District</option>
+                    <option value="MurocJointUSDUrl">Muroc Joint Unified School District</option>
+                    <option value="NorrisSDUrl">Norris School District</option>
+                    <option value="PanamaBuenaVistaUSDUrl">Panama-Buena Vista Union School District</option>
+                    <option value="PondElementarySDUrl">Pond Elementary School District</option>
+                    <option value="RichlandSDUrl">Richland School District</option>
+                    <option value="RioBravoGreeleyUSDUrl">Rio Bravo-Greeley Union School District</option>
+                    <option value="RosedaleUSDUrl">Rosedale Union School District</option>
+                    <option value="SemitropicSDUrl">Semitropic School District</option>
+                    <option value="SierraSandsUSDUrl">Sierra Sands Unified School District</option>
+                    <option value="SouthForkUSDUrl">South Fork Union School District</option>
+                    <option value="SouthernKernUSDUrl">Southern Kern Unified School District</option>
+                    <option value="StandardSchoolDUrl">Standard School District</option>
+                    <option value="TaftCityUrl">Taft City</option>
+                    <option value="TaftUnionHighSDUrl">Taft Union High School District</option>
+                    <option value="TehachapiUSDUrl">Tehachapi Unified School District</option>
+                    <option value="VinelandSDUrl">Vineland School District</option>
+                    <option value="WascoHighSDUrl">Wasco High School District</option>
+                    <option value="WascoUnionElementarySDUrl">Wasco Union Elementary School District</option>
+                    <option value="WonderfulCollegePrepUrl">Wonderful College Prep</option>
+                                
+                    <!-- Parent label (if applicable) -->
+                    <!-- <option value="parentUrl">Parent</option> -->
                 </select>
                 <br>
                 <input type="button" value="Login" onclick="winOpen()" id="submit" />
@@ -128,15 +222,155 @@
     function winOpen() {
         var url = document.redirect.selection.value
         switch (url) {
+            case "ArvinUSDUrl":
+                document.location.href = ArvinUSDUrl;
+                break;
+            case "BakersfieldCSDUrl":
+                document.location.href = BakersfieldCSDUrl;
+                break;
+            case "BeardsleySDUrl":
+                document.location.href = BeardsleySDUrl;
+                break;
+            case "BelridgeSDUrl":
+                document.location.href = BelridgeSDUrl;
+                break;
+            case "ButtonwillowSDUrl":
+                document.location.href = ButtonwillowSDUrl;
+                break;
+            case "CalienteUSDUrl":
+                document.location.href = CalienteUSDUrl;
+                break;
+            case "DelanoJointUnionHSDUrl":
+                document.location.href = DelanoJointUnionHSDUrl;
+                break;
+            case "DelanoUSDUrl":
+                document.location.href = DelanoUSDUrl;
+                break;
+            case "DiGiorgiaSDUrl":
+                document.location.href = DiGiorgiaSDUrl;
+                break;
+            case "EdisonESDUrl":
+                document.location.href = EdisonESDUrl;
+                break;
+            case "ElTejonUSDUrl":
+                document.location.href = ElTejonUSDUrl;
+                break;
+            case "ElkHillsESDUrl":
+                document.location.href = ElkHillsESDUrl;
+                break;
+            case "FairfaxSDUrl":
+                document.location.href = FairfaxSDUrl;
+                break;
+            case "FruitvaleSDUrl":
+                document.location.href = FruitvaleSDUrl;
+                break;
+            case "GeneralShafterUrl":
+                document.location.href = GeneralShafterUrl;
+                break;
             case "GreenfieldUSDUrl":
                 document.location.href = GreenfieldUSDUrl;
                 break;
-            case "Rio_BravoGreeleyUSDUrl":
-                document.location.href = Rio_BravoGreeleyUSDUrl;
+            case "GrimmwaySchoolsUrl":
+                document.location.href = GrimmwaySchoolsUrl;
                 break;
-            case "parentUrl":
-                document.location.href = parentUrl;
+            case "KCSOSAltEdUrl":
+                document.location.href = KCSOSAltEdUrl;
                 break;
+            case "KernvilleUSDUrl":
+                document.location.href = KernvilleUSDUrl;
+                break;
+            case "LakesideUnionUSDUrl":
+                document.location.href = LakesideUnionUSDUrl;
+                break;
+            case "LamontSDUrl":
+                document.location.href = LamontSDUrl;
+                break;
+            case "LinnsValleyPosoFlatUSDUrl":
+                document.location.href = LinnsValleyPosoFlatUSDUrl;
+                break;
+            case "LostHillsUSDUrl":
+                document.location.href = LostHillsUSDUrl;
+                break;
+            case "MapleElementarySDUrl":
+                document.location.href = MapleElementarySDUrl;
+                break;
+            case "MaricopaUSDUrl":
+                document.location.href = MaricopaUSDUrl;
+                break;
+            case "McFarlandUSDUrl":
+                document.location.href = McFarlandUSDUrl;
+                break;
+            case "McKittrickSDUrl":
+                document.location.href = McKittrickSDUrl;
+                break;
+            case "MidwaySDUrl":
+                document.location.href = MidwaySDUrl;
+                break;
+            case "MojaveUSDUrl":
+                document.location.href = MojaveUSDUrl;
+                break;
+            case "MurocJointUSDUrl":
+                document.location.href = MurocJointUSDUrl;
+                break;
+            case "NorrisSDUrl":
+                document.location.href = NorrisSDUrl;
+                break;
+            case "PanamaBuenaVistaUSDUrl":
+                document.location.href = PanamaBuenaVistaUSDUrl;
+                break;
+            case "PondElementarySDUrl":
+                document.location.href = PondElementarySDUrl;
+                break;
+            case "RichlandSDUrl":
+                document.location.href = RichlandSDUrl;
+                break;
+            case "RioBravoGreeleyUSDUrl":
+                document.location.href = RioBravoGreeleyUSDUrl;
+                break;
+            case "RosedaleUSDUrl":
+                document.location.href = RosedaleUSDUrl;
+                break;
+            case "SemitropicSDUrl":
+                document.location.href = SemitropicSDUrl;
+                break;
+            case "SierraSandsUSDUrl":
+                document.location.href = SierraSandsUSDUrl;
+                break;
+            case "SouthForkUSDUrl":
+                document.location.href = SouthForkUSDUrl;
+                break;
+            case "SouthernKernUSDUrl":
+                document.location.href = SouthernKernUSDUrl;
+                break;
+            case "StandardSchoolDUrl":
+                document.location.href = StandardSchoolDUrl;
+                break;
+            case "TaftCityUrl":
+                document.location.href = TaftCityUrl;
+                break;
+            case "TaftUnionHighSDUrl":
+                document.location.href = TaftUnionHighSDUrl;
+                break;
+            case "TehachapiUSDUrl":
+                document.location.href = TehachapiUSDUrl;
+                break;
+            case "VinelandSDUrl":
+                document.location.href = VinelandSDUrl;
+                break;
+            case "WascoHighSDUrl":
+                document.location.href = WascoHighSDUrl;
+                break;
+            case "WascoUnionElementarySDUrl":
+                document.location.href = WascoUnionElementarySDUrl;
+                break;
+            case "WonderfulCollegePrepUrl":
+                document.location.href = WonderfulCollegePrepUrl;
+                break;
+           
+            //// Parent URL (If applicable)    
+            // case "parentUrl":
+            //     document.location.href = parentUrl;
+            //     break;
 
             default:
                 break;
