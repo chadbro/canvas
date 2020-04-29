@@ -1,0 +1,5 @@
+canvas_user_id,user_id,login_id,authentication_provider_id
+15,testuser1,testuser1@test.com,canvas
+16,testuser2,testuser2@test.com,saml
+17,testuser3,testuser3@test.com,cas
+18,testuser4,testuser4@test.com,ldap
